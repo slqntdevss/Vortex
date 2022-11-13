@@ -1,0 +1,10 @@
+body {
+	background-color: grey;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.logo {
+	top: 10px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}

@@ -1,0 +1,14 @@
+{
+	"name": "vortex",
+	"short_name": "vortex",
+	"start_url": "/?home=true",
+	"description": "Easy to use proxy with now.gg support",
+	"icons": [
+		{
+		"src": "logo.webp",
+			"sizes": "512x512",
+			"type": "image/webp"
+		}
+	],
+	"display": "fullscreen"
+}
