@@ -2,75 +2,20 @@
 <html lang="en-US">
 <title>Classes</title>
 <head>
+	<link rel="stylesheet" href="/css/main.css"
 	<link rel="manifest" href="/manifest.json">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Easy to use proxy with now.gg support and quick access to websites">
 	 <meta charset="UTF-8">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-		@keyframes rotating {
-		from {
-			transform: rotate(0deg);
-		}
-
-		to {
-			transform: rotate(360deg);
-		}
-	}
-		body {
-			font-family: 'Poppins', sans-serif;
-			background-color: #0E48A7;
-		}
-
-		.home {
-			bottom: 50%;
-			height: 0;
-			display: grid;
-			justify-items: center;
-			animation: resizeIN 500ms;
-			animation-fill-mode: forwards;
-			animation-iteration-count: 1;
-		}
-
-		.logo-below {
-			text-align: center;
-			right: 46%;
-			bottom: 46%;
-			position: absolute;
-			font-size: 32px;
-		}
-		.logo {
-			right: 46%;
-			bottom: 60%;	
-			position: absolute;
-			width: 128px;
-			height: 128px;
-			-webkit-animation: rotating 3s linear infinite;
-		-moz-animation: rotating 3s linear infinite;
-		-ms-animation: rotating 3s linear infinite;
-		-o-animation: rotating 3s linear infinite;
-		animation: rotating 3s linear infinite;
-		}
-		.logo:hover {
-			cursor: pointer;
-		}
-
-		.form {
-			position: absolute;
-			right: 39.5%;
-			bottom: 44%;
-			height: 30px;
-			width: 150px;
-			text-align: center;
-			border-radius: 15px;
-			display: flex;
-			justify-content: center;
-			background: none;
-		}
-	</style>
-
-<body>
+<body id="classic" onload="startTime()">
+	<span class="time" id="clock"> Uh oh. The time hasnt loaded!</span>
+			<div class="content">
+	</div>
+		<script src="/js/theme.js"></script>
+	<script src="/js/clock.js"></script>
+	<div class="navbar">
+	<button class="btn" onclick="window.location.href='/settings'">Settings</button>
+	</div>
 	<img class="logo" src="logo.webp" onclick="window.location.reload" alt="vortex"></img>
 	<div class="logo-below">
 		<p>vortex.</p>
@@ -85,5 +30,4 @@
     <script src="uv/uv.config.js"></script>
     <script src="/index.js"></script>
 <script src="keyp.js"></script>
-
 </html>

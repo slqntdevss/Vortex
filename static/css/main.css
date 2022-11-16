@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+		@keyframes rotating {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg);
+		}
+	}
+		.classic {
+			font-family: 'Poppins', sans-serif;
+			background-color: #0E48A7;
+			color: #ffffff;
+		}
+
+		.home {
+			bottom: 50%;
+			height: 0;
+			display: grid;
+			justify-items: center;
+			animation: resizeIN 500ms;
+			animation-fill-mode: forwards;
+			animation-iteration-count: 1;
+		}
+
+		.logo-below {
+			text-align: center;
+			right: 46%;
+			bottom: 46%;
+			position: absolute;
+			font-size: 32px;
+		}
+		.logo {
+			right: 46%;
+			bottom: 60%;	
+			position: absolute;
+			width: 128px;
+			height: 128px;
+			-webkit-animation: rotating 3s linear infinite;
+		-moz-animation: rotating 3s linear infinite;
+		-ms-animation: rotating 3s linear infinite;
+		-o-animation: rotating 3s linear infinite;
+		animation: rotating 3s linear infinite;
+		}
+		.logo:hover {
+			cursor: pointer;
+		}
+
+		.form {
+			position: absolute;
+			right: 39.5%;
+			bottom: 44%;
+			height: 30px;
+			width: 150px;
+			text-align: center;
+			border-radius: 15px;
+			display: flex;
+			background: none;
+			color: white;
+			-webkit-transition: 0.5s all ease;
+		transition: 0.5s ease all;
+		}
+		::placeholder {
+			color: black;
+		}
+		input {
+			border-style: solid;
+		}
+		input:hover {
+			background: grey;
+		}
+		.form:focus {
+			color: black;
+			background: white;
+		}
+.midnight {
+	background: #26324b;
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+}
+.btn {
+	border-radius: 15px;
+	width: 75px;
+	height: 30px;
+	background: none;
+	border-style: solid;
+}
+.content {
+	justify-content: center;
+}
+time {
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	
+}
+btn:hover {
+	cursor: pointer;
+}
+.set {
+	border-radius: 15px;
+	width: 75px;
+	height: 30px;
+	text-align: center;
+	justify-content: center;
+}
+.navbar {
+	justify-content: right;
+	display: flex;
+	
+}
