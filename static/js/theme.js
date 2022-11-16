@@ -1,8 +1,8 @@
 document.body.classList.add("classic")
 function midnight() {
-	window.localStorage.setItem('midnight', 'true');
+	window.localStorage.setItem('midnight', 'on');
 	document.body.style.backgroundColor = "#26324b"
-	localStorage.setItem('classic', 'false');
+	localStorage.setItem('classic', 'off');
 	window.localStorage.removeItem('classic');
 	window.localStorage.setItem('lava', 'off')
 	window.localStorage.removeItem('lava')
@@ -10,8 +10,8 @@ function midnight() {
 function lava() {
 	window.localStorage.setItem('lava', 'on')
 	document.body.style.backgroundColor = "#fb4509"
-	window.localStorage.setItem('classic', 'off')
-	window.localStorage.removeItem('classic')
+	localStorage.setItem('classic', 'off');
+	window.localStorage.removeItem('classic');
 	window.localStorage.setItem('midnight', 'off')
 	window.localStorage.removeItem('midnight')
 }
@@ -25,8 +25,12 @@ function classic() {
 }
 if (window.localStorage.getItem('classic') == "on") {
 	document.body.classList.add("classic")
-} else if (window.localStorage.getItem('midnight') == "on") {
+}
+
+else if (window.localStorage.getItem('midnight') == "on") {
 	document.body.classList.add("midnight")
-} else if (window.localStorage.getItem('lava') == "on") {
+}
+
+else if (window.localStorage.getItem('lava') == "on") {
 	document.body.classList.add("lava")
 }
