@@ -7,15 +7,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Easy to use proxy with now.gg support and quick access to websites">
 	 <meta charset="UTF-8">
-<body id="classic" onload="startTime()">
-	<span class="time" id="clock"> Uh oh. The time hasnt loaded!</span>
+<body> 
+  <div class="topnav" id="Topnav">
+		<span style="text-align: center;" class="time" id="clock"> Uh oh. The time hasnt loaded!</span>
+  <a href="/" class="active">Home</a>
+  <a href="/settings">Settings</a>
+		<a href="/apps">Apps</a>
+	<a onclick="window.open('https://discord.gg/jvjcYUcJXP')">Community</a>
+</div>	
 			<div class="content">
 	</div>
 		<script src="/js/theme.js"></script>
 	<script src="/js/clock.js"></script>
-	<div class="navbar">
-	<button class="btn" onclick="window.location.href='/settings'">Settings</button>
-	</div>
 	<img class="logo" src="logo.webp" onclick="window.location.reload" alt="vortex"></img>
 	<div class="logo-below">
 		<p>vortex.</p>
@@ -23,7 +26,7 @@
 	<form class="form">
 		<input type="text" class="form" placeholder="search the web freely">
 	</form>
-	<br>
+	<div id="particles-js"></div>
 </body>
 </head>
 <script src="uv/uv.bundle.js"></script>

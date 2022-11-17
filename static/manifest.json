@@ -1,7 +1,7 @@
 {
 	"name": "vortex",
 	"short_name": "vortex",
-	"start_url": "/?home=true",
+	"start_url": "/",
 	"description": "Easy to use proxy with now.gg support",
 	"icons": [
 		{
