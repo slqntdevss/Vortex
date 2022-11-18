@@ -16,9 +16,10 @@
 			--placeh: #000000;
 			--btn-color: #000000;
 			--nav-color: #0a2857;
-			--nav-tcolor: #000000;
-			--nav-tcolorh: #ffffff;
+			--nav-tcolor: #ffffff;
+			--nav-tcolorh: #000000;
 			--nav-tcolora: #000000;
+			--btn-h: #ffffff;
 		}
 .retro {
 			font-family: 'Poppins', sans-serif;
@@ -30,6 +31,7 @@
 			--nav-tcolor: #14c832;
 			--nav-tcolorh: #000000;
 			--nav-tcolora: #0e4317;
+			--btn-h: #000000;
 		}
 h1 {
 	-webkit-transition: 0.5s all ease;
@@ -44,17 +46,19 @@ h1 {
 	--nav-tcolor: #c18d7b;
 	--nav-tcolorh: #bf5431;
 	--nav-tcolora: #6d3c2c;
+	--btn-h: #bf5431;
 }
 .midnight {
-	background: #26324b;
+	background: #101c38;
 	color: #ffffff;
 	font-family: 'Poppins', sans-serif;
 	--placeh: white;
 	--btn-color: #ffffff;
-	--nav-color: #0e1d3f;
+	--nav-color: #040f2a;
 	--nav-tcolor: #ffffff;
 	--nav-tcolorh: #272626;
 	--nav-tcolora: #ffffff;
+	--btn-h: #ffffff;
 }
 		.home {
 			bottom: 50%;
@@ -103,6 +107,29 @@ h1 {
 			-webkit-transition: 0.5s all ease;
 		transition: 0.5s ease all;
 		}
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    }
+.app {
+	color: var(--btn-color);
+	height: 175px;
+	width: 175px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 20px;
+	background: none;
+	-webkit-transition: 0.5s all ease;
+		transition: 0.5s ease all;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+.app:hover {
+	cursor: pointer;
+	background: var(--btn-h)
+}
 		::placeholder {
 			color: var(--placeh);
 		}
@@ -128,8 +155,8 @@ h1 {
 		transition: 0.5s ease all;
 	}
 
-	.button:hover {
-		background: var(--btn-transfer);
+	.btn:hover {
+		background: var(--btn-h);
 		cursor: pointer;
 	}
 .content {
@@ -137,6 +164,8 @@ h1 {
 	display: flex;
 }
 .time {
+	margin-left: 10px;
+	font-size: 30px;
 	width: 200px;
 	height: 40px;
 	text-align: center;
