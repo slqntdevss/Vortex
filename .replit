@@ -1,6 +1,7 @@
 entrypoint = "index.js"
+run = ["nodemon", "."]
 
-hidden = [".config"]
+
 
 [interpreter]
 command = [

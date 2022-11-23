@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <title>Classes</title>
 <head>
 	<link rel="stylesheet" href="/css/main.css">
@@ -10,7 +10,7 @@
 	 <meta charset="UTF-8">
 <body> 
   <div class="topnav" id="Topnav">
-		<span style="text-align: center;" class="time" id="clock"> Uh oh. The time hasnt loaded!</span>
+<span class="time" id="clock"></span>
   <a href="/" class="active">Home</a>
   <a href="/s">Settings</a>
 		<a href="/a">Apps</a>
@@ -21,14 +21,17 @@
 	</div>
 		<script src="/js/theme.js"></script>
 	<script src="/js/clock.js"></script>
-	<img class="logo" src="logo.webp" onclick="window.location.reload" alt="vortex"></img>
-	<div class="logo-below">
-		<p>vortex.</p>
-	</div>
+	<div class="center">
+	<img class="logo" src="logo.webp" onclick="reload()" alt="vortex"></img>
+		<p class="logo-below">vortex.</p>
 	<form class="form">
 		<input type="text" class="form" placeholder="search the web freely">
 	</form>
+		</div>
 	<div id="particles-js"></div>
+  <div class = "foot">
+    <h6>Mystic - 2022</h6>
+  </div>
 </body>
 </head>
 <script src="uv/uv.bundle.js"></script>

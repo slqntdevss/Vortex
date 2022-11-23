@@ -30,9 +30,9 @@ function displayTime() {
 	var mm = String(today.getMonth() + 1).padStart(2, "0") //January is 0!
 	var yyyy = today.getFullYear()
 	today = mm + "/" + dd + "/" + yyyy
-	var time = h + "<span style='opacity:100%;' class='clockColon'>:</span>" + m + "<span style='opacity:100%;' class='clockColon'>:</span>" + s
+	var time = h + "<span style='opacity:100%;' class='clockColon'>:</span>" + m
 	document.getElementById("clock").innerHTML =
-		getDayName(today, "us-US") + ", " + time + " " + session + ", " + yyyy
+		getDayName(today, "us-US") + ", " + time + " " + session
 
 	return time
 }
