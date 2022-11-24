@@ -1,5 +1,4 @@
-# Vortex
-Proxy using Ultraviolet with (planned) now.gg support with quick access to websites
+![Vortex](https://socialify.git.ci/GamingReborn/Vortex/image?description=1&font=Inter&forks=1&language=1&name=1&owner=1&stargazers=1&theme=Dark)
 ## Credits
 mystic dev team: the front end and features <br>
 Titanium Network: Ultraviolet <br>
